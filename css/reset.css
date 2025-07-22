@@ -1,0 +1,98 @@
+/* ===== Reset CSS Moderno + Integração com Variáveis e Acessibilidade ===== */
+
+/* Importa a fonte base usada no projeto */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Box-sizing universal */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Tipografia e suavização */
+html {
+  font-family: var(--fonte-principal, "Raleway", sans-serif);
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* Mídia responsiva */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inputs, textarea, selects e botões padronizados */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+/* Botões com aparência limpa */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Links sem sublinhado */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Listas sem estilo */
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+/* Tabelas consistentes */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Elementos ocultos de forma padrão */
+[hidden] {
+  display: none !important;
+}
+
+/* ===== Acessibilidade ===== */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #ffffff;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+}
+.skip-link:focus {
+  top: 0;
+}

@@ -1,0 +1,11 @@
+:root {
+  /* ===== Cores principais ===== */
+  --cor-branca: #ffffff;
+  --cor-preta: #111111;
+  --cor-fundo: #f9f9f9;
+  --cor-primaria: #0062bb;
+  --cor-secundaria: #d0dde6;
+  --cor-destaque: #ff8b00;
+  --cor-sombra: rgba(0, 0, 0, 0.1);
+  --cor-texto-secundario: #666666;
+}

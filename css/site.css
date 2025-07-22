@@ -1,0 +1,94 @@
+.porque-site {
+  margin: 0 auto;
+  display: flex;
+  width: 90vw;
+  height: 80vh;
+  margin-bottom: 160px;
+  justify-content: space-between;
+  
+
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  justify-content: space-around;
+  margin-top: -40px;
+}
+.intro h2 {
+  font-size: clamp(24px, 3vw, 550px);
+  line-height: 1.2;
+  font-weight: 800;
+  text-transform: uppercase;  
+
+}
+.intro p {
+  font-size: clamp(16px, 0.9vw, 30px);
+  max-width: 38vw;
+}
+.intro .btn {
+  display: inline-block;
+  background-color: var(--cor-destaque);
+  color: #fff;
+  padding: 0.8rem 1.3rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  
+  text-align: center;
+}
+.container{
+  
+align-content: center;
+}
+.cards {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(0.3rem, 4rem, 5rem);
+}
+
+.card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 98, 187, 0.1);
+  transition: transform 0.3s ease;
+  max-width: 20vw;
+  height: 35vh;
+  border: rgba(0, 98, 187, 0.1) 1px solid;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card img {
+  width: 80px;
+  height: 80px;
+  margin-top: -4rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border: 6px solid white;
+
+}
+
+.card h3 {
+  font-size: 1.1rem;
+    color: var(--cor-primaria);
+  margin-top: 20px;
+  margin-bottom: 1.3rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.card em {
+  display: block;
+  margin-top: 0.5rem;
+  color: #888;
+  font-style: italic;
+  font-size: 0.9rem;
+}
