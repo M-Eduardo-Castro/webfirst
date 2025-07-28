@@ -1,0 +1,20 @@
+.cards-services{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border: 1px solid black;
+    display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 colunas iguais */
+  grid-template-rows: repeat(2, auto);   /* 2 linhas com altura automática */
+  gap: 20px; /* espaçamento entre os itens */
+  padding: 20px;
+}
+
+.cards-services img{
+  width: 2.5vw;
+  
+}
+.card-services{
+  
+  max-width: 15vw;
+}

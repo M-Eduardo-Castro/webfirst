@@ -1,0 +1,65 @@
+
+.projeto-site h2{
+font-size: clamp(16px, 2.35vw, 150px);
+
+font-weight: 800;
+}
+.projeto-site {
+  position: relative;
+  height: 50vh;
+  margin-bottom: 120px;
+  margin-top: -60px;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.projeto-site video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  pointer-events: none;
+  filter: brightness(0.7); /* escurece o vídeo para destacar o texto */
+}
+
+.projeto-site .conteudo {
+  position: relative;
+  z-index: 1;
+}
+
+.projeto-site p{
+  font-size: clamp(16px, 1.4vw, 40px);
+font-weight: 400;
+  letter-spacing: clamp(1px, 0.5vw, 8px);
+}
+.projeto-site button{
+  margin-top: 40px;
+  background-color: var(--cor-destaque);
+  color: var(--cor-branca);
+  padding: 1rem 2rem;
+  font-size: clamp(16px, 1vw, 50px);
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: fit-content;
+  text-decoration: none;
+  font-style: italic;
+  border: 2px solid white;
+}
+.projeto-site button:hover {
+  background-color: var(--cor-primaria);
+  color: aliceblue;
+  border: 1px solid white;
+}
