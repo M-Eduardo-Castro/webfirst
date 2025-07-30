@@ -20,3 +20,19 @@
     });
   });
 
+  const section = document.querySelector('.projeto-site');
+
+  const observer = new IntersectionObserver(
+    ([entry]) => {
+      if (entry.isIntersecting) {
+        section.classList.add('animado');
+        observer.unobserve(section); // anima só uma vez
+      }
+    },
+    {
+      root: null,
+      threshold: 0.5, // ativa quando 50% da seção estiver visível
+    }
+  );
+
+  observer.observe(section);

@@ -63,3 +63,29 @@ font-weight: 400;
   color: aliceblue;
   border: 1px solid white;
 }
+
+/* Início invisível com transição suave */
+.projeto-site .conteudo > * {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* Ativado quando classe "animado" for adicionada */
+.projeto-site.animado .conteudo h2 {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.2s;
+}
+
+.projeto-site.animado .conteudo p {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.6s;
+}
+
+.projeto-site.animado .conteudo button {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1s;
+}
